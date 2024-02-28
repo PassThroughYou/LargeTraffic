@@ -21,10 +21,12 @@ public class UserDTO {
     private int id;
     private String userId;
     private String password;
+    private String nickname;
     private String isAdmin;
     private Date createTime;
     private boolean isWithDraw;
     private Status status;
+    private String address;
     private Date updateTime;
 
 }

@@ -10,9 +10,11 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
 
-@Configuration
-@MapperScan(basePackages="com.largetraffic.boardserver.mapper")
+@Configuration //메타정보를 설정할 수 있도롣 해줌
+@MapperScan(basePackages="com.largetraffic.boardserver.mapper") //특정 경로의 리소스들을 업로드 할 수 있게 함
 public class MysqlConfig {
+
+
 
     public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception{
 
@@ -28,6 +30,8 @@ public class MysqlConfig {
 
         return sessionFactory.getObject();
     }
+
+
 
 
 
